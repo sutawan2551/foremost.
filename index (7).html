@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>ESP32 GPIO2 Control</title>
+  <title>ESP32 GPIO5 Control</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body { 
@@ -39,7 +39,7 @@
 <body>
 
 <div class="container">
-  <h1>ESP32 GPIO2 Control</h1>
+  <h1>ESP32 GPIO5 Control</h1>
   <button id="btnOn" class="on">ON</button>
   <button id="btnOff" class="off">OFF</button>
   <div class="status" id="status">Connecting...</div>
@@ -49,8 +49,8 @@
 <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 <script>
   // Topic ตรงกับ ESP32
-  const TOPIC_CMD = "esp32/gpio2/cmd";
-  const TOPIC_STATUS = "esp32/gpio2/status";
+  const TOPIC_CMD = "esp32/gpio5/cmd";
+  const TOPIC_STATUS = "esp32/gpio5/status";
 
   const clientId = 'web_' + Math.random().toString(16).substr(2, 8);
 
@@ -125,4 +125,5 @@
 </script>
 
 </body>
+
 </html>
